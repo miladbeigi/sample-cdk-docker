@@ -24,6 +24,9 @@ RUN apk -v --no-cache --update add \
 
 WORKDIR /opt/app
 
-COPY . /opt/app
+COPY setup.py requirements.txt /opt/app/
+COPY cdk_docker_sample /opt/app/cdk_docker_sample
 
 RUN pip3 install -r requirements.txt
+
+COPY . /opt/app

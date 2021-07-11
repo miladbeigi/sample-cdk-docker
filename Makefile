@@ -2,4 +2,4 @@ build:
 	docker-compose build
 
 shell:
-	docker-compose run --rm cdk bash
+	docker-compose run --name cdk-shell --rm cdk bash

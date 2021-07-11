@@ -1,16 +1,13 @@
 import setuptools
 
 
-with open("README.md") as fp:
-    long_description = fp.read()
-
 
 setuptools.setup(
     name="cdk_docker_sample",
     version="0.0.1",
 
     description="An empty CDK Python app",
-    long_description=long_description,
+    long_description="An empty CDK Python app" ,
     long_description_content_type="text/markdown",
 
     author="author",
