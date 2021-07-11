@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+
+  cdk:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: cdk-docker-sample
+    env_file: .env
+    image : cdk-docker-sample
+    working_dir: /opt/app
+    volumes:
+      - type: bind
+        source: ~/.aws
+        target: /root/.aws
+        read_only: true
+      - type: bind
+        source: .
+        target: /opt/app
