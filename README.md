@@ -1,2 +1,2 @@
-# sample-cdk-project
-Sample AWS CDK repository
+# sample-cdk-docker-project
+Sample AWS CDK with Docker
